@@ -20,7 +20,9 @@ namespace Mission2Assignment
             
             for (int i = 0; i < numRolls; i++)      //Takes random number as dice roll and itterates the number of times that number is rolled in our array
             {
-                int roll = r.Next(2, 13);
+                int roll1 = r.Next(1, 7);
+                int roll2 = r.Next(1, 7);
+                int roll = roll1 + roll2;
                 dice[roll] = ++dice[roll];
             }
 
